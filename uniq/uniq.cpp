@@ -11,25 +11,16 @@ int main() {
 	printf("\nSame Character : ");
 	while (*p1 != '\0' || *p2 != '\0') {
 		if (*p1 == *(p1 + 1)) {
-			//printf("\nString 1 skipp : ");
 			while (*p1 == *(p1 + 1)) {
-				//printf(" %c ", *p1);
 				p1++;
 			}
-
 		}
-
 		if (*p2 == *(p2 + 1)) {
-			//printf("\nString 2 skipp : ");
 			while (*p2 == *(p2 + 1)) {
-				//printf(" %c ",*p2);
-
 				p2++;
 			}
 		}
-		
 		if (*p1 == *p2) {
-			//printf("\n%c = %c ", *p1, *p2);
 			printf("%c", *p1);
 		}
 		else {
